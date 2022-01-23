@@ -2,6 +2,7 @@ package HW2;
 
 public class Task2MinNum {
     public static void main(String[] args) {
+
         System.out.println(minNumber(-58, 32.1, -14.5));
     }
 
