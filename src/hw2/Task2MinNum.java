@@ -1,4 +1,4 @@
-package HW2;
+package hw2;
 
 public class Task2MinNum {
     public static void main(String[] args) {

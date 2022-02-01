@@ -4,7 +4,7 @@
         7 8 9
         -10 -11 -12
  Передать массив в метод, заполнить данный массив*/
-package HW5;
+package hw5;
 
 import java.util.Arrays;
 import java.util.Random;
