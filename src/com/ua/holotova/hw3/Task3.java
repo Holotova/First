@@ -1,4 +1,4 @@
-package hw3;
+package com.ua.holotova.hw3;
 
 import java.util.Scanner;
 

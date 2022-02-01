@@ -1,4 +1,4 @@
-package hw2;
+package com.ua.holotova.hw2;
 
 public class Task2MinNum {
     public static void main(String[] args) {
