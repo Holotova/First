@@ -7,40 +7,31 @@
 package ua.holotova.hw5;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class Task1 {
     public static void main(String[] args) {
-        int[][] array = new int[4][4];
-        fillArray(array);
-        System.out.println(" ");
-        fillArrayNegativeNumbers(array);
-    }
-
-    public static void fillArray(int[][] array) {
-        Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[0].length; j++) {
-                array[i][j] = random.nextInt(10) + 1;
+        int m = 5;
+        int n = 6;
+        int[][] array = new int[m][n];
+        for (int i = 0; i < fillArrayNegativeNumbers(array).length; i++) {
+            for (int j = 0; j < fillArrayNegativeNumbers(array)[i].length; j++) {
+                System.out.print(fillArrayNegativeNumbers(array)[i][j] + "\t");
             }
-        }
-        for (int m = 0; m < array.length; m++) {
-            System.out.println(Arrays.toString(array[m]));
+            System.out.println();
         }
     }
 
-    public static void fillArrayNegativeNumbers(int[][] array) {
-        int[][] negativeArray = new int[4][4];
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[0].length; j++) {
-                negativeArray[i][j] = array[i][j];
+    public static int[][] fillArrayNegativeNumbers(int[][] array){
+        int[][] negativeArray = Arrays.copyOf(array, array.length);
+        int s = 1;
+        for (int i = 0; i < negativeArray.length; i++) {
+            for (int j = 0; j < negativeArray[i].length; j++) {
+                negativeArray[i][j] = s++;
                 if (i % 2 != 0) {
                     negativeArray[i][j] = -negativeArray[i][j];
                 }
             }
         }
-        for (int m = 0; m < negativeArray.length; m++) {
-            System.out.println(Arrays.toString(negativeArray[m]));
-        }
+        return negativeArray;
     }
 }
