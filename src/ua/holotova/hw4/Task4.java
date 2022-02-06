@@ -19,11 +19,12 @@ public class Task4 {
     }
 
     private static int[] changeEven(int[] numbers){
-        for (int i = 0; i<numbers.length; i++){
-            if (numbers[i] % 2 == 0 ){
-                numbers[i] = 0;
+        int[] changedArray = Arrays.copyOf(numbers, numbers.length);
+        for (int i = 0; i<changedArray.length; i++){
+            if (changedArray[i] % 2 == 0 ){
+                changedArray[i] = 0;
             }
         }
-        return numbers;
+        return changedArray;
     }
 }
