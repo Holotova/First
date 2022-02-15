@@ -18,7 +18,7 @@ public class Task4 {
         }
     }
 
-    private static int[] changeEven(int[] numbers){
+    public static int[] changeEven(int[] numbers){
         int[] changedArray = Arrays.copyOf(numbers, numbers.length);
         for (int i = 0; i<changedArray.length; i++){
             if (changedArray[i] % 2 == 0 ){

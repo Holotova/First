@@ -19,7 +19,7 @@ public class Task1 {
         }
     }
 
-    private static double countAverage(int[] numbers) {
+    public static double countAverage(int[] numbers) {
         double sum = 0;
         for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];
@@ -28,7 +28,7 @@ public class Task1 {
         return average;
     }
 
-    private static double countMean(int[] numbers) {
+    public static double countMean(int[] numbers) {
         double product = 1;
         for (int i = 0; i < numbers.length; i++) {
             product *= numbers[i];

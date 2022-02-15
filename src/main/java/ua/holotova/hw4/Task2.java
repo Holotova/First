@@ -8,7 +8,7 @@ public class Task2 {
         int[] firstArray = new int[1000];
         fillArray(firstArray);
         System.out.println(Arrays.toString(firstArray));
-        countPrimeComp(firstArray);
+        System.out.println(countPrimeComp(firstArray));
     }
 
     private static void fillArray(int[] array) {
@@ -17,7 +17,7 @@ public class Task2 {
         }
     }
 
-    private static void countPrimeComp(int[] firstArray) {
+    public static String countPrimeComp(int[] firstArray) {
         int primeNumbers = 0;
         int compositeNumbers = 0;
         for (int i = 0; i < firstArray.length; i++) {
@@ -35,8 +35,7 @@ public class Task2 {
                 }
             }
         }
-        System.out.println("Простых чисел " + primeNumbers);
-        System.out.println("Составных чисел " + compositeNumbers);
+        return "Простых чисел " + primeNumbers + ", Составных чисел " + compositeNumbers;
     }
 }
 
