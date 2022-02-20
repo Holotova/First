@@ -44,12 +44,11 @@ public class Car implements Recovery {
     }
 
     public static void main(String[] args) {
-        PassengerCar car1 = new PassengerCar(2, 2009, "white", 30 );
-        PassengerCar.Passenger passenger = car1.new Passenger();
+        PassengerCar car1 = new PassengerCar(2, 2009, "white", 30);
         Track car2 = new Track(3, 2010, "green", 10);
         System.out.println(car1);
         System.out.println(car2);
-        System.out.println(car1.putPassengerOn(3));
+        System.out.println(car1.putPassengerOn());
         System.out.println(car2.loadCargo(100));
 
     }
