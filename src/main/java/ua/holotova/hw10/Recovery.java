@@ -2,7 +2,5 @@
 package ua.holotova.hw10;
 
 public interface Recovery {
-    public default void refuel() {
-        System.out.println("Уровень топлива восстановлен");
-    }
+    public double refuel();
 }

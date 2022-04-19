@@ -5,37 +5,24 @@ package ua.holotova.hw10;
 
 public class PassengerCar extends Car implements Recovery {
 
-    Passenger passenger;
-    int numberOfPassengers;
+    selfEducation.lesson10.PassengerCar passenger;
 
-    public PassengerCar(int series, int year, String color, int fuel) {
-        super(series, year, color, fuel);
-        passenger = new Passenger(numberOfPassengers);
-
+    public PassengerCar(int serialNumber, int year, String color, double fuel) {
+        super(serialNumber, year, color, fuel);
     }
 
-    public String putPassengerOn() {
-        return passenger.calcPassengers(3) + "passenger(s) in the car";
+    public void setPassenger(int passenger) {
+        if (passenger > 3) {
+            passenger = 3;
+            System.out.println("В автомобиле должно быть только 3 пассажира, остальных высадили");
+        } else {
+            System.out.println("В автомобиле " + passenger + " пассажир(а)");
+        }
     }
 
     @Override
-    public void refuel() {
-        super.refuel();
-    }
-
-    public class Passenger {
-        private int numberOfPassengers;
-
-        public Passenger(int numberOfPassengers) {
-            this.numberOfPassengers = numberOfPassengers;
-        }
-
-        public int calcPassengers(int numberOfPassengers) {
-            if (numberOfPassengers <= 3) {
-                return numberOfPassengers;
-            } else {
-                return 3;
-            }
-        }
+    public double refuel() {
+        double maxFuel = 65;
+        return maxFuel;
     }
 }

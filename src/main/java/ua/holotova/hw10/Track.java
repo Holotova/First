@@ -7,29 +7,46 @@
 package ua.holotova.hw10;
 
 public class Track extends Car implements Recovery {
+    double cargo;
 
-   int cargo;
-
-    public Track(int series, int year, String color, int fuel) {
-        super(series, year, color, fuel);
+    public Track(int serialNumber, int year, String color, double fuel) {
+        super(serialNumber, year, color, fuel);
     }
 
-
-    public static String loadCargo(int cargo) {
+    public void loadCargo(double cargo) {
+        double loadCapacity = 20;
+        double loadedCargo = 0;
+        double unloadedCargo = 0;
         if (cargo > 0) {
-            return "Cargo is loaded";
+            if (cargo > loadCapacity) {
+                loadedCargo = loadCapacity;
+            } else {
+                loadedCargo += cargo;
+            }
+            System.out.println("Загружено " + loadedCargo + " т груза");
         }
-        return "Cargo is unloaded";
+        if (cargo < 0) {
+            unloadedCargo -= cargo;
+            System.out.println("Выгружено " + unloadedCargo + " т груза");
+        }
     }
 
     @Override
-    public void run() {
-        super.run();
-        System.out.println("Fuel consumption is 2 times higher than normal");
+    public void run(int distance) {
+        double fuelConsumption = 0.2;
+        int vehicleRange = (int) (fuel / fuelConsumption);
+        if (fuel == 0) {
+            System.out.println("Закончилось топливо!");
+        } else if (vehicleRange >= distance) {
+            System.out.println("Топлива достаточно. Расчетный запас хода автомобиля " + vehicleRange + " км");
+        } else {
+            System.out.println("Топлива недостаточно для поездки на это расстояние. Требуется дозаправка. Расчетный запас хода автомобиля " + vehicleRange + " км");
+        }
     }
 
     @Override
-    public void refuel() {
-        super.refuel();
+    public double refuel() {
+        double maxFuel = 600;
+        return maxFuel;
     }
 }
