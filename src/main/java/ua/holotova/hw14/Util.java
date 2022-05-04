@@ -25,7 +25,7 @@ public class Util<M> implements Multiplier<M> {
         return array;
     }
 
-    public <S extends Number> void sum(Number one, Number two) { // should work only with numbers
+    public <S extends Number> void sum(S one, S two) { // should work only with numbers
         System.out.println(one.doubleValue() + two.doubleValue());
     }
 
@@ -37,7 +37,7 @@ public class Util<M> implements Multiplier<M> {
         return s;
     }
 
-    public void addNumbers(List<Integer> list) {
+    public void addNumbers(List<? super Integer> list) {
         for (int i = 1; i <= 10; i++) {
             list.add(i);
         }
