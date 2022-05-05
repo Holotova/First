@@ -5,12 +5,17 @@ import java.util.Comparator;
 public class BoxComparator implements Comparator<Box> {
     @Override
     public int compare(Box a, Box b) {
-        if (a.getVolume() > b.getVolume() || a.getVolume() == 0)
+        if (a.getVolume() ==0){
             return -1;
-        else if (a.getVolume() < b.getVolume())
+        } else if (b.getVolume() ==0){
             return 1;
-        else
+        } else if (a.getVolume() > b.getVolume()){
+            return -1;
+        } else if (a.getVolume() < b.getVolume()){
+            return 1;
+        } else {
             return 0;
+        }
     }
 }
 
