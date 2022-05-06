@@ -7,10 +7,6 @@
         5) Имплементировать интерфейс в созданных ранее типах машин*/
 
 package ua.holotova.hw10;
-
-import selfEducation.lesson10.PassengerCar;
-import selfEducation.lesson10.Track;
-
 public class Car {
     int series;
     int year;
@@ -47,9 +43,9 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        selfEducation.lesson10.Car car = new selfEducation.lesson10.Car(3000, 2020, "Red", 23);
-        selfEducation.lesson10.PassengerCar passengerCar = new PassengerCar(0007, 2022, "Green", 20.5);
-        selfEducation.lesson10.Track track = new Track(1010, 2021, "Black", 50);
+        Car car = new Car(3000, 2020, "Red", 23);
+        PassengerCar passengerCar = new PassengerCar(0007, 2022, "Green", 20.5);
+        Track track = new Track(1010, 2021, "Black", 50);
 
         car.run(600);
         passengerCar.run(100);
