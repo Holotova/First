@@ -1,6 +1,6 @@
 package ua.holotova.hw15.task1;
 
-public class MyNode<E> {
+class MyNode<E> {
     private E value;
     private MyNode<E> next;
     private MyNode<E> previous;

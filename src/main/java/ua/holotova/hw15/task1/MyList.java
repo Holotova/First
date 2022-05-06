@@ -2,7 +2,7 @@ package ua.holotova.hw15.task1;
 
 import java.util.Optional;
 
-public class MyList<E> {
+class MyList<E> {
     private MyNode<E> head;
     private MyNode<E> tail;
     int size = 0;

@@ -1,8 +1,6 @@
 package ua.holotova.hw15.task2;
 
-import java.util.Comparator;
-
-public class Box implements Comparator<Box> {
+public class Box{
     private int volume;
 
     public Box(int volume) {
@@ -13,8 +11,5 @@ public class Box implements Comparator<Box> {
         return volume;
     }
 
-    @Override
-    public int compare(Box a, Box b) {
-        return 0;
-    }
+
 }
