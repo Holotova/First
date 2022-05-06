@@ -7,6 +7,7 @@
         5) Имплементировать интерфейс в созданных ранее типах машин*/
 
 package ua.holotova.hw10;
+
 public class Car {
     int series;
     int year;
