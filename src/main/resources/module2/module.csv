@@ -1,0 +1,11 @@
+type,series,model,diagonal,screen type,country,price
+Telephone,Galaxy,Samsung,none,AMOLED,none,13000
+Telephone,Moto,Motorola,none,IPS,none,9000
+Telephone,Redmi,Xiaomi,none,AMOLED,none,8900
+Telephone,iPhone11,Apple,none,Liquid-Retina-HD,none,21000
+Telephone,G21,Nokia,none,IPS,none,6100
+Television,QE50,Samsung,50,QLED,China,24000
+Television,32LM,LG,32,LED,Poland,10700
+Television,32H,Hitachi,32,LED,Turkey,8000
+Television,64DH,Ergo,64,LED,China,12000
+Television,40F,Kivi,25,,China,7500
