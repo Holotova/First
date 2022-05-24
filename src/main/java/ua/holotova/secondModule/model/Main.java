@@ -21,14 +21,5 @@ public class Main {
         analiticInformation.getChecksWithOneKindOfGoods();
         analiticInformation.getUnder18Checks();
         analiticInformation.sortAllOrders();
-
-        /*AnaliticInformation.getSoldGoodsByCategory();
-        AnaliticInformation.getSumOfAllChecks();*/
-        /*AnaliticInformation.firstThreeChecks();
-        AnaliticInformation.countRetailChecks();
-        AnaliticInformation.getMinSumOfCheck();
-        AnaliticInformation.getChecksWithOneKindOfGoods();
-        AnaliticInformation.getUnder18Checks();
-        AnaliticInformation.sortAllOrders();*/
     }
 }
