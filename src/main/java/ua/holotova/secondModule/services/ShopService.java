@@ -83,7 +83,7 @@ public class ShopService {
         String time = timeNow.format(dateNow);
         List<Technics> techno = formOrder();
         Customer customer = PersonService.generateCustomer();
-        String type = Invoice.setType(techno);
+        String type = Invoice.setType(Invoice.chooseInvoiceType(techno));
         return new Invoice(time, customer, type, techno);
 
     }

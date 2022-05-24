@@ -4,8 +4,8 @@ import lombok.Getter;
 
 @Getter
 public class Television extends Technics{
-    Integer diagonal;
-    String country;
+    private Integer diagonal;
+    private String country;
 
     public Television(String series, String screenType, Integer price, Integer diagonal, String country) {
         super(series, screenType, price);
@@ -15,12 +15,6 @@ public class Television extends Technics{
 
     @Override
     public String toString() {
-        return "Television{" +
-                "series='" + series + '\'' +
-                ", screenType='" + screenType + '\'' +
-                ", price=" + price +
-                ", diagonal=" + diagonal +
-                ", country='" + country + '\'' +
-                "} " ;
+        return "Television( " + "series= " + series + ", screenType= " + screenType + ", price= " + price + ", diagonal= " + diagonal + ", country= " + country + ") ";
     }
 }

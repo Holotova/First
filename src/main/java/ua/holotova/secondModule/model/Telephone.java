@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class Telephone extends Technics {
-    String model;
+    private String model;
 
 
     public Telephone(String series, String screenType, Integer price, String model) {
@@ -14,11 +14,6 @@ public class Telephone extends Technics {
 
     @Override
     public String toString() {
-        return "Telephone{" +
-                "series='" + series + '\'' +
-                ", screenType='" + screenType + '\'' +
-                ", price=" + price +
-                ", model='" + model + '\'' +
-                "} ";
+        return "Telephone (" + "series= " + series + ", screenType= " + screenType + ", price= " + price + ", model= " + model + ") ";
     }
 }

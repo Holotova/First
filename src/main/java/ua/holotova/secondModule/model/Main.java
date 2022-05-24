@@ -12,9 +12,23 @@ public class Main {
         Invoice.setLimit(scanner.nextInt());
         ShopService.writeFileWithInvoices();
 
-        AnaliticInformation.getSoldGoodsByCategory();
-        AnaliticInformation.getSumOfAllChecks();
-        AnaliticInformation.firstThreeChecks();
+        AnaliticInformation analiticInformation = new AnaliticInformation();
+        analiticInformation.getSoldGoodsByCategory();
+        analiticInformation.getSumOfAllChecks();
+        analiticInformation.firstThreeChecks();
+        analiticInformation.countRetailChecks();
+        analiticInformation.getMinSumOfCheck();
+        analiticInformation.getChecksWithOneKindOfGoods();
+        analiticInformation.getUnder18Checks();
+        analiticInformation.sortAllOrders();
+
+        /*AnaliticInformation.getSoldGoodsByCategory();
+        AnaliticInformation.getSumOfAllChecks();*/
+        /*AnaliticInformation.firstThreeChecks();
         AnaliticInformation.countRetailChecks();
+        AnaliticInformation.getMinSumOfCheck();
+        AnaliticInformation.getChecksWithOneKindOfGoods();
+        AnaliticInformation.getUnder18Checks();
+        AnaliticInformation.sortAllOrders();*/
     }
 }

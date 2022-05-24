@@ -7,14 +7,17 @@ import java.util.List;
 
 @Getter
 public class Invoice {
-    String date;
-    Customer customer;
-    String type;
-    List<Technics> technics;
+    private String date;
+    private Customer customer;
+    private String type;
+    private List<Technics> technics;
     static int limit;
 
+    public static String setType(String s) {
+        return s;
+        }
 
-    public static String setType(List<Technics> techno) {
+    public static String chooseInvoiceType(List<Technics> techno) {
         int amountOfCheck = techno.stream()
                 .map(s -> s.getPrice())
                 .mapToInt(s -> s)
@@ -43,7 +46,7 @@ public class Invoice {
 
     @Override
     public String toString() {
-        return "Invoice: " + date + " " + type + " " + customer + " " + technics;
+        return "Invoice: " + date + " " + type + " " + customer + "\n" +  technics;
     }
 }
 
