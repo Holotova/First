@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Task2 {
     public static void main(String[] args) {
-        int[] firstArray = new int[1000];
+        int[] firstArray = new int[10];
         fillArray(firstArray);
         System.out.println(Arrays.toString(firstArray));
         System.out.println(countPrimeComp(firstArray));
