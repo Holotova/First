@@ -3,7 +3,9 @@
 P.S. значения элементов можно ограничить значениями 1-10 включительно.
 */
 package ua.holotova.hw4;
+
 import java.util.Arrays;
+
 public class Task1 {
     public static void main(String[] args) {
         int[] numbers = new int[400];
