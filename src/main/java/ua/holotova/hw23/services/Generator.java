@@ -151,7 +151,10 @@ public class Generator {
 
     @SneakyThrows
     public static void getDevicesGroupingByFactory() {
-        final String sql = "SELECT factory.Name, COUNT(device.ID) AS cnt, SUM(Price) AS sm FROM factory INNER JOIN device USING (Factory_ID) GROUP BY factory.Name";
+        final String sql = "SELECT factory.Name, COUNT(device.ID) AS cnt, " +
+                "SUM(Price) AS sm FROM factory " +
+                "INNER JOIN device USING (Factory_ID) " +
+                "GROUP BY factory.Name";
         final PreparedStatement statement = CreateTables.getPreparedStatement(sql);
         ResultSet resultSet = statement.executeQuery();
         while (resultSet.next()) {
