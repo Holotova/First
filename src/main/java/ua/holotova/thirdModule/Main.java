@@ -37,30 +37,17 @@ public class Main {
                 System.out.println("Incorrect data!");
             }
 
-            if (enteredNumber == 1) {
-                STUDY_GROUP_SERVICE.printGroupsByNamePart();
-                System.out.println("_____________________________");
-            } else if (enteredNumber == 2) {
-                STUDY_GROUP_SERVICE.printQtyStudentsInGroups();
-                System.out.println("_____________________________");
-            } else if (enteredNumber == 3) {
-                STUDY_GROUP_SERVICE.printAverageMarksInGroups();
-                System.out.println("_____________________________");
-            } else if (enteredNumber == 4) {
-                LECTURER_SERVICE.printLecturerByFirstOrLastName();
-                System.out.println("_____________________________");
-            } else if (enteredNumber == 5) {
-                UNIVERSITY_SUBJECT_SERVICE.printBestWorstPercentageSubject();
-                System.out.println("_____________________________");
-            } else if (enteredNumber == 6) {
-                LEARNER_SERVICE.printLearnersWithAdvancementMore();
-                System.out.println("_____________________________");
-            } else if (enteredNumber == 7) {
-                System.out.println("Thank you for attention. Good Buy!");
-            } else {
-                System.out.println("Enter correct number please");
-                System.out.println("_____________________________");
+            switch (enteredNumber) {
+                case 1 -> STUDY_GROUP_SERVICE.printGroupsByNamePart();
+                case 2 -> STUDY_GROUP_SERVICE.printQtyStudentsInGroups();
+                case 3 -> STUDY_GROUP_SERVICE.printAverageMarksInGroups();
+                case 4 -> LECTURER_SERVICE.printLecturerByFirstOrLastName();
+                case 5 -> UNIVERSITY_SUBJECT_SERVICE.printBestWorstPercentageSubject();
+                case 6 -> LEARNER_SERVICE.printLearnersWithAdvancementMore();
+                case 7 -> System.out.println("Thank you for attention. Good Buy!");
+                default -> System.out.println("Enter correct number please");
             }
+            System.out.println("_____________________________");
         }
     }
 }
