@@ -8,14 +8,15 @@ import ua.holotova.hw21.interfaces.Multiplier;
 @ToString
 @AutoCreate
 public class Mouse {
+    @Multiplier
     private final String name = "Jerry";
     @Multiplier(operation = "multiplication")
     private final Integer age = 2;
     @Multiplier()
-    private final Integer weight = 1;
+    private final Double weight = 1.5;
 
     @Init
-    public static void init(){
+    public static void init() {
         System.out.println("Mouse squeaks");
     }
 }

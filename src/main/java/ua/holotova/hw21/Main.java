@@ -1,9 +1,13 @@
 package ua.holotova.hw21;
 
-import java.lang.reflect.InvocationTargetException;
+import lombok.SneakyThrows;
 
 public class Main {
-    public static void main(String[] args) throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException, NoSuchFieldException {
-        AnnotationCheckService.checkAnnotatedClasses();
+    @SneakyThrows
+    public static void main(String[] args){
+
+        AnnotationCheckService service = new AnnotationCheckService();
+        service.changeAnnotatedClasses();
+
     }
 }

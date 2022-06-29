@@ -8,15 +8,16 @@ import ua.holotova.hw21.interfaces.Multiplier;
 @ToString
 @AutoCreate
 public class Cat {
+    @Multiplier()
     private final String name = "Jack";
     @Multiplier()
     private final Integer age = 10;
     @Multiplier(operation = "multiplication")
-    private final Integer weight = 9;
+    private final Double weight = 9.2;
 
     @Init
-    public static void init(){
-        System.out.println("Сat meows");
+    public static void init() {
+        System.out.println("Cat meows");
     }
 
 }
