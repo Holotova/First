@@ -7,15 +7,16 @@ import ua.holotova.hw28.utils.ProductUtils;
 import java.util.List;
 
 public class Main {
+    private static final ProductRepository PRODUCT_REPOSITORY = new ProductRepository();
+    private static final ProductUtils PRODUCT_UTILS = new ProductUtils();
+    private static final List<Product> PRODUCTS = PRODUCT_REPOSITORY.generateProductList();
     public static void main(String[] args) {
-        ProductRepository productRepository = new ProductRepository();
-        ProductUtils productUtils = new ProductUtils();
-        List<Product> products = productRepository.generateProductList();
+
 
         System.out.println("General list of products: ");
-        products.forEach(System.out::println);
+        PRODUCTS.forEach(System.out::println);
         System.out.println("_____________________________");
         System.out.println("Notifications were sent: " +
-                productUtils.countNotificationsForNotifiableProducts(products));
+                PRODUCT_UTILS.countNotificationsForNotifiableProducts(PRODUCTS));
     }
 }

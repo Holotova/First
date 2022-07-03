@@ -5,7 +5,7 @@ package ua.holotova.hw10;
 
 public class PassengerCar extends Car implements Recovery {
 
-    selfEducation.lesson10.PassengerCar passenger;
+    PassengerCar passenger;
 
     public PassengerCar(int serialNumber, int year, String color, double fuel) {
         super(serialNumber, year, color, fuel);

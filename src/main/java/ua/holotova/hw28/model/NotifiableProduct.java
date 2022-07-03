@@ -2,11 +2,11 @@ package ua.holotova.hw28.model;
 
 import lombok.Getter;
 
-@Getter
+
 public class NotifiableProduct extends Product {
     protected String channel;
 
-    protected NotifiableProduct() {
+    public NotifiableProduct() {
     }
 
     @Override

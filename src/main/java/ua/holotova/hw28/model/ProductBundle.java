@@ -2,7 +2,6 @@ package ua.holotova.hw28.model;
 
 import lombok.Getter;
 
-
 public class ProductBundle extends NotifiableProduct {
     protected int amount;
 
