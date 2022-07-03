@@ -1,12 +1,12 @@
 package ua.holotova.hw30.task1;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        List<MyThread> threads = new LinkedList<>();
+        List <MyThread> threads = new ArrayList<>(50);
         for (int i = 0; i < 50; i++) {
             threads.add(new MyThread());
         }
