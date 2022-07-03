@@ -3,10 +3,10 @@ package ua.holotova.hw31.task2;
 import java.util.Scanner;
 
 public class RaceRegistration {
-    private final static int LIMIT_OF_RACERS = 10;
+    private static final int LIMIT_OF_RACERS = 10;
     public static int CUSTOM_HORSE_NUMBER;
     public static int HORSES;
-    private final Scanner SCANNER = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     public void chooseNumberOfParticipants() {
         System.out.println("Welcome to our hippodrome!\n" +

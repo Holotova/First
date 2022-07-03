@@ -9,14 +9,14 @@ import static ua.holotova.hw31.task2.RaceRegistration.CUSTOM_HORSE_NUMBER;
 import static ua.holotova.hw31.task2.RaceRegistration.HORSES;
 
 public class HorseRacing {
-    private final String PREFIX_HORSE_NAME = "pool-1-thread-";
-    private final Random RANDOM = new Random();
-    List<String> horseList = new ArrayList<>();
-    List<Long> resultTable = new ArrayList<>();
-    List<Long> sortedResultTable;
-    long customResult;
-    int place;
-    String customHorse = PREFIX_HORSE_NAME + CUSTOM_HORSE_NUMBER;
+    private static final String PREFIX_HORSE_NAME = "pool-1-thread-";
+    private static final Random RANDOM = new Random();
+    private List<String> horseList = new ArrayList<>();
+    private List<Long> resultTable = new ArrayList<>();
+    private List<Long> sortedResultTable;
+    private long customResult;
+    private int place;
+    private String customHorse = PREFIX_HORSE_NAME + CUSTOM_HORSE_NUMBER;
 
     public long getRunTime() {
         long startTime = System.currentTimeMillis();
