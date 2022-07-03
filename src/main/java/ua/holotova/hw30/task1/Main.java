@@ -11,8 +11,9 @@ public class Main {
             threads.add(new MyThread());
         }
         for (int j = threads.size() - 1; j >= 0; j--) {
-            threads.get(j).start();
-            threads.get(j).join();
+            final MyThread thread = threads.get(j);
+            thread.start();
+            thread.join();
         }
     }
 }
