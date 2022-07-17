@@ -15,7 +15,7 @@
 14. Удалить книгу
 15. Создать много книг*/
 
-package ua.holotova.hw34;
+package ua.holotova.hw35;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,10 +29,27 @@ public class Main {
                 "8. GET/api/authors/{id}\n" +
                 "9. GET/api/authors/{id}/books\n" +
                 "10. GET/api/authors/{id}/books/{id}\n" +
-                "11. POST/api/books?id={id}\n" +
-                "12. POST/api/authors/{id}/books?id={id}\n" +
+                "11. POST/api/books\n" +
+                    "body{\n" +
+                    "\"id\":\"223423\",\n" +
+                    "\"name\":\"Effective Java\",\n" +
+                    "\"year\":2018,\n" +
+                    "\"author\":\"Joshua Bloch\"\n" +
+                    "}\n" +
+                "12. POST/api/authors/{id}/books\n" +
+                    "body{\n" +
+                    "\"id\":\"58467598\",\n" +
+                    "\"name\":\"Java for Dummies\",\n" +
+                    "\"year\":2019\n" +
+                    "}\n" +
                 "13. PUT/api/authors/{id}\n" +
+                    "body{\n" +
+                    "\"author\":\"Herbert Schildt\"\n" +
+                    "}\n" +
                 "14. DELETE/api/books/{id}\n" +
-                "15. POST/api/books");
+                "15. POST/api/books\n" +
+                    "body{\n" +
+                    "\"books\":{243534,4546,6645,18456,68564}\n" +
+                    "}");
     }
 }
