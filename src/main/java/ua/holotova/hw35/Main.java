@@ -19,7 +19,11 @@ package ua.holotova.hw35;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("1. GET/api/users?user-name={user-name}&password={password}\n" +
+        System.out.println("1. POST/api/login\n" +
+                    "body{\n" +
+                    "\"user-name\":\"user-name\"\n" +
+                    "\"password\":\"password\"\n" +
+                    "}\n" +
                 "2. GET/api/books\n" +
                 "3. GET/api/books?name={name}\n" +
                 "4. GET/api/books?year={year}\n" +
@@ -49,7 +53,18 @@ public class Main {
                 "14. DELETE/api/books/{id}\n" +
                 "15. POST/api/books\n" +
                     "body{\n" +
-                    "\"books\":{243534,4546,6645,18456,68564}\n" +
-                    "}");
+                    "[{\"id\":\"11111\",\n" +
+                    "\"name\":\"Some book 1\",\n" +
+                    "\"year\":2022,\n" +
+                    "\"author\":\"Author-1\"},\n\n" +
+                    "{\"id\":\"2222\",\n" +
+                    "\"name\":\"Some book 2\",\n" +
+                    "\"year\":2022,\n" +
+                    "\"author\":\"Author-2\"},\n\n" +
+                    "{\"id\":\"3333\",\n" +
+                    "\"name\":\"Some book 3\",\n" +
+                    "\"year\":2022,\n" +
+                    "\"author\":\"Author-3\"}]" +
+                    "\n}");
     }
 }
