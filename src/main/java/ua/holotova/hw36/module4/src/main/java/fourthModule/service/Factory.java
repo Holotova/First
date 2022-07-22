@@ -1,4 +1,4 @@
-package fourthModule.model;
+package fourthModule.service;
 
 import fourthModule.runnable.BasicDetailProduction;
 import fourthModule.runnable.FinishDetailRunnable;

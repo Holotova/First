@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>src/main/java/ua/holotova/hw33/servlets</module>
-        <module>src/main/java/ua/holotova/module4</module>
+        <module>src/main/java/ua/holotova/hw36/module4</module>
     </modules>
 
     <properties>

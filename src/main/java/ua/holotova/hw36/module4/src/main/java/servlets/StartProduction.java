@@ -1,6 +1,6 @@
 package servlets;
 
-import fourthModule.model.Factory;
+import fourthModule.service.Factory;
 import fourthModule.util.HibernateFactoryUtil;
 
 import javax.servlet.ServletException;

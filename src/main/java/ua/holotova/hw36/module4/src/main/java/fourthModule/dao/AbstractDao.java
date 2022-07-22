@@ -11,7 +11,7 @@ import java.util.List;
 
 abstract class AbstractDao<T> {
     protected Class<T> aClass;
-    protected final EntityManager ENTITY_MANAGER = HibernateFactoryUtil.getEntityManager();
+    protected static final EntityManager ENTITY_MANAGER = HibernateFactoryUtil.getEntityManager();
 
     public AbstractDao() {
         init();

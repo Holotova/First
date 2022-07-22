@@ -1,6 +1,6 @@
 package fourthModule;
 
-import fourthModule.model.Factory;
+import fourthModule.service.Factory;
 import fourthModule.util.HibernateFactoryUtil;
 
 public class Main {
